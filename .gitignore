@@ -1,0 +1,66 @@
+# SSH Chat App - Git Ignore File
+
+# Temporary chat files
+/tmp/
+**/tmp/
+*.tmp
+
+# Chat session directories
+ssh-chat-*/
+.ssh-chat-*/
+
+# Runtime files
+*.log
+*.pid
+*.lock
+.lock
+
+# Message logs and user files
+messages.log
+users.lock
+
+# OS-specific files
+.DS_Store
+Thumbs.db
+*.swp
+*~
+.vscode/
+.idea/
+*.iml
+
+# Node modules (if any future Node version)
+node_modules/
+
+# Python cache (if any future Python version)
+__pycache__/
+*.py[cod]
+*$py.class
+.Python
+venv/
+ENV/
+
+# Build and dist directories
+build/
+dist/
+*.tar.gz
+*.zip
+
+# IDE settings
+.vscode/*
+!.vscode/settings.json
+.idea/
+
+# Environment variables
+.env
+.env.local
+
+# Backup files
+*.bak
+*.backup
+*.orig
+
+# Archives
+*.tar
+*.tar.gz
+*.zip
+*.rar
