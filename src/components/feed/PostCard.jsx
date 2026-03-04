@@ -4,10 +4,10 @@ const PostCard = ({ post }) => {
     const [votes, setVotes] = useState(post.votes);
 
     return (
-        <article className="bg-white dark:bg-primary/5 border border-slate-200 dark:border-primary/10 rounded-xl overflow-hidden hover:border-primary/30 transition-colors">
+        <article className="bg-white/60 dark:bg-primary/5 backdrop-blur-md border border-white/40 dark:border-primary/20 shadow-sm rounded-xl overflow-hidden hover:border-primary/40 transition-colors">
             <div className="flex">
                 {/* Voting Column */}
-                <div className="w-12 bg-slate-50/50 dark:bg-primary/5 flex flex-col items-center py-4 gap-1">
+                <div className="w-12 bg-slate-50/30 dark:bg-primary/5 backdrop-blur-sm flex flex-col items-center py-4 gap-1 border-r border-white/20 dark:border-transparent">
                     <button className="text-slate-400 hover:text-primary" onClick={() => setVotes(v => v + 1)}>
                         <span className="material-symbols-outlined text-3xl leading-none">expand_less</span>
                     </button>
