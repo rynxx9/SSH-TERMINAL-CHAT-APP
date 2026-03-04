@@ -16,7 +16,6 @@ const PostCard = ({ post }) => {
                         <span className="material-symbols-outlined text-lg">arrow_downward</span>
                     </button>
                 </div>
-                {/* Post Content */}
                 <div className="flex-1 p-4">
                     <div className="flex items-center gap-2 text-xs text-slate-500 mb-2">
                         <span className="font-bold text-slate-900 dark:text-slate-200">{post.tag}</span>
