@@ -3,16 +3,27 @@ import React, { useState } from 'react';
 const PostCard = ({ post }) => {
     const [votes, setVotes] = useState(post.votes);
 
+    const handleVote = (action) => {
+        fetch(`/api/posts/${post.id}/vote`, {
+            method: 'PUT',
+            headers: { 'Content-Type': 'application/json' },
+            body: JSON.stringify({ action })
+        })
+            .then(res => res.json())
+            .then(data => setVotes(data.votes))
+            .catch(err => console.error("Error voting:", err));
+    };
+
     return (
         <article className="bg-white/60 dark:bg-primary/5 backdrop-blur-md border border-white/40 dark:border-primary/20 shadow-sm rounded-xl overflow-hidden hover:border-primary/40 transition-colors">
             <div className="flex">
                 {/* Voting Column */}
                 <div className="w-12 bg-slate-50/30 dark:bg-primary/5 backdrop-blur-sm flex flex-col items-center py-4 gap-1 border-r border-white/20 dark:border-transparent">
-                    <button className="text-slate-400 hover:text-primary" onClick={() => setVotes(v => v + 1)}>
+                    <button className="text-slate-400 hover:text-primary" onClick={() => handleVote('up')}>
                         <span className="material-symbols-outlined text-3xl leading-none">expand_less</span>
                     </button>
                     <span className="text-sm font-bold">{votes > 999 ? (votes / 1000).toFixed(1) + 'k' : votes}</span>
-                    <button className="text-slate-400 hover:text-red-400" onClick={() => setVotes(v => v - 1)}>
+                    <button className="text-slate-400 hover:text-red-400" onClick={() => handleVote('down')}>
                         <span className="material-symbols-outlined text-3xl leading-none">expand_more</span>
                     </button>
                 </div>
