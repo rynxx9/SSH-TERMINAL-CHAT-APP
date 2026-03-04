@@ -1,0 +1,128 @@
+{
+    "posts": [
+        {
+            "id": 1,
+            "title": "Just completely revamped my Neovim config, and it feels like a superpower 🚀",
+            "excerpt": "After years of using VS Code, I finally took the plunge and configured Neovim from scratch. The speed and efficiency are just unmatched. Anyone else here a terminal editor convert?",
+            "author": "terminal_junkie",
+            "tag": "ma/programming",
+            "time": "2h ago",
+            "votes": 342,
+            "comments": 45
+        },
+        {
+            "id": 2,
+            "title": "Looking for advice: Transitioning from Data Analyst to Data Engineer",
+            "excerpt": "I've been working as a Data Analyst for 3 years, mostly using SQL, Python (Pandas), and Tableau. I want to move into Data Engineering. What should I focus on learning next? Spark? Airflow? Cloud infra?",
+            "author": "data_diver",
+            "tag": "ma/career",
+            "time": "4h ago",
+            "votes": 215,
+            "comments": 82
+        },
+        {
+            "id": 3,
+            "title": "Is Tailwind CSS really better than writing custom CSS?",
+            "excerpt": "I'm starting a new Next.js project and my team is divided. Half wants to use Tailwind, the other half wants SCSS modules. What are the long-term pros and cons of going all-in on Tailwind for a large codebase?",
+            "author": "css_purist_99",
+            "tag": "ma/frontend",
+            "time": "5h ago",
+            "votes": 523,
+            "comments": 156
+        },
+        {
+            "id": 4,
+            "title": "The importance of writing good commit messages 📝",
+            "excerpt": "Please, for the love of all that is holy, stop writing 'fixed bug' or 'updates'. Your future self and your teammates will thank you for taking an extra 30 seconds to explain WHY a change was made.",
+            "author": "git_gud",
+            "tag": "ma/best_practices",
+            "time": "7h ago",
+            "votes": 890,
+            "comments": 64
+        },
+        {
+            "id": 5,
+            "title": "Rust vs Go for a new microservice architecture?",
+            "excerpt": "We are breaking down our monolith. We have heavy concurrent loads and need high performance. I love Rust's safety, but Go's concurrency model (goroutines) seems much easier to manage. Thoughts?",
+            "author": "architect_bob",
+            "tag": "ma/backend",
+            "time": "12h ago",
+            "votes": 412,
+            "comments": 118
+        },
+        {
+            "id": 6,
+            "title": "Show DevHive: I built an open-source alternative to Postman",
+            "excerpt": "Hey everyone! I got tired of Postman becoming increasingly bloated and cloud-dependent, so I built a lightweight, fully offline, open-source API client using Tauri and React. Would love some feedback!",
+            "author": "open_sourcerer",
+            "tag": "ma/show_devhive",
+            "time": "1d ago",
+            "votes": 1205,
+            "comments": 234
+        },
+        {
+            "id": 7,
+            "title": "What's the most obscure bug you've ever had to track down?",
+            "excerpt": "I once spent 3 days debugging an issue that only happened on Tuesdays. Turns out, a cron job timezone wasn't set correctly and it drifted across the dateline. What's your horror story?",
+            "author": "bug_hunter_supreme",
+            "tag": "ma/debugging",
+            "time": "2d ago",
+            "votes": 680,
+            "comments": 89
+        },
+        {
+            "id": 8,
+            "title": "Best co-working spaces in Rabat for software engineers?",
+            "excerpt": "Working from home is getting a bit lonely. Can anyone recommend some good co-working spaces in Rabat with reliable fiber optics and good coffee?",
+            "author": "mehdi_backend",
+            "tag": "ma/networking",
+            "time": "3d ago",
+            "votes": 95,
+            "comments": 21
+        }
+    ],
+    "communities": {
+        "trending": [
+            {
+                "id": "t1",
+                "name": "ma/ReactJS",
+                "members": "125K"
+            },
+            {
+                "id": "t2",
+                "name": "ma/SysAdmin",
+                "members": "89K"
+            },
+            {
+                "id": "t3",
+                "name": "ma/DesignSystems",
+                "members": "54K"
+            },
+            {
+                "id": "t4",
+                "name": "ma/CyberSecurity",
+                "members": "210K"
+            }
+        ],
+        "user": [
+            {
+                "id": "u1",
+                "name": "ma/WebDev_MA",
+                "iconChar": "W",
+                "color": "emerald"
+            },
+            {
+                "id": "u2",
+                "name": "ma/AI_Morocco",
+                "iconChar": "A",
+                "color": "orange"
+            },
+            {
+                "id": "u3",
+                "name": "ma/JobHunting",
+                "iconChar": "J",
+                "color": "blue"
+            }
+        ]
+    }
+}
