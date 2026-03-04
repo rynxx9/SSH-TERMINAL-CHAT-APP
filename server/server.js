@@ -97,6 +97,15 @@ app.get('/api/communities/sidebar', (req, res) => {
     res.json(data.communities || { trending: [], user: [] });
 });
 
+// Serve frontend in production
+const clientBuildPath = path.join(__dirname, '../dist');
+if (fs.existsSync(clientBuildPath)) {
+    app.use(express.static(clientBuildPath));
+    app.get('*', (req, res) => {
+        res.sendFile(path.join(clientBuildPath, 'index.html'));
+    });
+}
+
 app.listen(PORT, () => {
     console.log(`Server running on http://localhost:${PORT}`);
 });

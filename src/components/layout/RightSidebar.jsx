@@ -1,6 +1,15 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 
 const RightSidebar = ({ className = "" }) => {
+    const [trending, setTrending] = useState([]);
+
+    useEffect(() => {
+        fetch('/api/communities/sidebar')
+            .then(res => res.json())
+            .then(data => setTrending(data.trending || []))
+            .catch(err => console.error("Error fetching trending communities:", err));
+    }, []);
+
     return (
         <aside className={`hidden lg:block space-y-6 ${className}`}>
             {/* Popular Communities */}
@@ -9,42 +18,23 @@ const RightSidebar = ({ className = "" }) => {
                     <h3 className="font-bold">Trending Communities</h3>
                 </div>
                 <div className="p-2">
-                    <div className="flex items-center justify-between p-2 hover:bg-slate-50 dark:hover:bg-primary/10 rounded-lg cursor-pointer">
-                        <div className="flex items-center gap-3">
-                            <span className="font-bold text-slate-400">1</span>
-                            <div className="w-8 h-8 rounded-full bg-indigo-500"></div>
-                            <div>
-                                <p className="text-sm font-bold">ma/Frontend</p>
-                                <p className="text-[10px] text-slate-500">2.4k new today</p>
+                    {trending.map((comm, index) => (
+                        <div key={comm.id} className="flex items-center justify-between p-2 hover:bg-slate-50 dark:hover:bg-primary/10 rounded-lg cursor-pointer">
+                            <div className="flex items-center gap-3">
+                                <span className="font-bold text-slate-400">{index + 1}</span>
+                                <div className="w-8 h-8 rounded-full bg-indigo-500"></div>
+                                <div>
+                                    <p className="text-sm font-bold">{comm.name}</p>
+                                    <p className="text-[10px] text-slate-500">{comm.members} members</p>
+                                </div>
                             </div>
+                            <button className="bg-primary text-background-dark text-xs font-bold px-3 py-1 rounded-full">Join</button>
                         </div>
-                        <button className="bg-primary text-background-dark text-xs font-bold px-3 py-1 rounded-full">Join</button>
-                    </div>
-                    <div className="flex items-center justify-between p-2 hover:bg-slate-50 dark:hover:bg-primary/10 rounded-lg cursor-pointer">
-                        <div className="flex items-center gap-3">
-                            <span className="font-bold text-slate-400">2</span>
-                            <div className="w-8 h-8 rounded-full bg-amber-500"></div>
-                            <div>
-                                <p className="text-sm font-bold">ma/Python_MA</p>
-                                <p className="text-[10px] text-slate-500">1.8k new today</p>
-                            </div>
-                        </div>
-                        <button className="bg-primary text-background-dark text-xs font-bold px-3 py-1 rounded-full">Join</button>
-                    </div>
-                    <div className="flex items-center justify-between p-2 hover:bg-slate-50 dark:hover:bg-primary/10 rounded-lg cursor-pointer">
-                        <div className="flex items-center gap-3">
-                            <span className="font-bold text-slate-400">3</span>
-                            <div className="w-8 h-8 rounded-full bg-emerald-500"></div>
-                            <div>
-                                <p className="text-sm font-bold">ma/OpenSource</p>
-                                <p className="text-[10px] text-slate-500">900 new today</p>
-                            </div>
-                        </div>
-                        <button className="bg-primary text-background-dark text-xs font-bold px-3 py-1 rounded-full">Join</button>
-                    </div>
+                    ))}
+                    {trending.length === 0 && <p className="text-center p-4 text-slate-500 text-sm">Loading...</p>}
                 </div>
-                <div className="p-3 text-center">
-                    <button className="text-sm font-bold text-primary hover:underline">View All</button>
+                <div className="p-4 border-t border-white/40 dark:border-primary/20 bg-slate-50 dark:bg-transparent">
+                    <button className="w-full font-bold text-primary text-sm hover:underline">View All Communities</button>
                 </div>
             </div>
 
