@@ -4,8 +4,8 @@ const RightSidebar = () => {
     return (
         <aside className="hidden lg:block lg:col-span-3 space-y-6">
             {/* Popular Communities */}
-            <div className="bg-white dark:bg-primary/5 border border-slate-200 dark:border-primary/10 rounded-xl overflow-hidden">
-                <div className="p-4 border-b border-slate-200 dark:border-primary/10 bg-primary/5 text-center">
+            <div className="bg-white/60 dark:bg-primary/5 backdrop-blur-md border border-white/40 dark:border-primary/20 shadow-sm rounded-xl overflow-hidden">
+                <div className="p-4 border-b border-white/40 dark:border-primary/20 bg-primary/5 text-center">
                     <h3 className="font-bold">Trending Communities</h3>
                 </div>
                 <div className="p-2">
@@ -49,7 +49,7 @@ const RightSidebar = () => {
             </div>
 
             {/* Community Rules / Info */}
-            <div className="bg-white dark:bg-primary/5 border border-slate-200 dark:border-primary/10 rounded-xl p-4 flex flex-col items-center text-center">
+            <div className="bg-white/60 dark:bg-primary/5 backdrop-blur-md border border-white/40 dark:border-primary/20 shadow-sm rounded-xl p-4 flex flex-col items-center text-center">
                 <h3 className="font-bold mb-4">DevHive Community</h3>
                 <p className="text-sm text-slate-600 dark:text-slate-400 mb-4 leading-relaxed">
                     The hive for Moroccan developers. Share knowledge, find opportunities, and connect with peers across the Kingdom. 🇲🇦
