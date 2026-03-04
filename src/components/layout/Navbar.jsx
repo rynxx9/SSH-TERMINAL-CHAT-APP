@@ -2,7 +2,7 @@ import React from 'react';
 
 const Navbar = () => {
     return (
-        <header className="sticky top-0 z-50 bg-background-light/80 dark:bg-background-dark/80 backdrop-blur-md border-b border-slate-200 dark:border-primary/10 px-4 md:px-10 py-3">
+        <header className="sticky top-0 z-50 bg-white/70 dark:bg-background-dark/70 backdrop-blur-xl border-b border-white/20 dark:border-primary/10 px-4 md:px-10 py-3">
             <div className="max-w-7xl mx-auto flex items-center justify-between gap-4">
                 {/* Logo */}
                 <div className="flex items-center gap-3 shrink-0">
@@ -18,7 +18,7 @@ const Navbar = () => {
                         <div className="absolute inset-y-0 left-0 pl-3 flex items-center pointer-events-none text-slate-400 group-focus-within:text-primary transition-colors">
                             <span className="material-symbols-outlined">search</span>
                         </div>
-                        <input className="w-full bg-slate-100 dark:bg-primary/5 border-transparent focus:border-primary focus:ring-0 rounded-full pl-10 pr-4 py-2 text-sm transition-all outline-none" placeholder="Search communities, posts, or developers..." type="text" />
+                        <input className="w-full bg-slate-100/50 dark:bg-primary/5 backdrop-blur-sm border border-white/40 dark:border-transparent focus:border-primary focus:ring-0 rounded-full pl-10 pr-4 py-2 text-sm transition-all outline-none" placeholder="Search communities, posts, or developers..." type="text" />
                     </div>
                 </div>
 
