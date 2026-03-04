@@ -2,7 +2,7 @@ import React from 'react';
 
 const Navbar = () => {
     return (
-        <header className="sticky top-0 z-50 bg-white/70 dark:bg-background-dark/70 backdrop-blur-xl border-b border-white/20 dark:border-primary/10 px-4 md:px-8 py-3">
+        <header className="sticky top-0 z-50 bg-white/85 dark:bg-background-dark/85 backdrop-blur-xl border-b border-white/40 dark:border-primary/20 px-4 md:px-8 py-3 shadow-sm">
             <div className="w-full flex items-center justify-between gap-4">
                 {/* Logo */}
                 <div className="flex items-center gap-3 shrink-0">
