@@ -2,7 +2,7 @@ import React from 'react';
 
 const Sidebar = ({ className = "" }) => {
     return (
-        <aside className={`hidden lg:block space-y-4 bg-white/40 dark:bg-primary/5 backdrop-blur-md border border-white/30 dark:border-primary/20 p-3 rounded-xl shadow-sm h-fit sticky top-24 ${className}`}>
+        <aside className={`hidden lg:block space-y-4 ios-glass ios-glass-border ios-glass-shadow p-3 rounded-xl h-fit sticky top-24 ${className}`}>
             <nav className="space-y-1">
                 <a className="flex items-center gap-3 p-2 rounded-lg bg-primary/10 text-primary font-bold" href="#">
                     <span className="material-symbols-outlined">home</span>

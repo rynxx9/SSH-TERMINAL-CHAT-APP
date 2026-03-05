@@ -4,7 +4,7 @@ const PostCard = ({ post }) => {
     const [votes, setVotes] = useState(post.votes);
 
     return (
-        <article className="bg-white/60 dark:bg-primary/5 backdrop-blur-md border border-white/40 dark:border-primary/20 shadow-sm rounded-xl overflow-hidden hover:border-primary/40 transition-colors">
+        <article className="ios-glass ios-glass-border ios-glass-shadow rounded-xl overflow-hidden hover:border-primary/40 transition-colors">
             <div className="flex">
                 {/* Voting Column */}
                 <div className="w-12 bg-slate-50/30 dark:bg-primary/5 backdrop-blur-sm flex flex-col items-center py-4 gap-1 border-r border-white/20 dark:border-transparent">

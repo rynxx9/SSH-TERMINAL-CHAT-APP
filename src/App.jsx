@@ -109,7 +109,7 @@ function App() {
 
         <section className="col-span-1 lg:col-span-6 space-y-6">
           {/* Create Post Mock */}
-          <div className="bg-white/60 dark:bg-primary/5 backdrop-blur-md border border-white/40 dark:border-primary/20 shadow-sm rounded-xl p-4 flex gap-4 items-center">
+          <div className="ios-glass ios-glass-border ios-glass-shadow rounded-xl p-4 flex gap-4 items-center">
             <div className="h-10 w-10 rounded-full bg-primary/20 shrink-0 overflow-hidden">
               <img alt="Profile" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCR0r7w9UdEpAkpJVKqyQtMpzy8-rUzsSXJxFs1nc27IfrOh1AvZOogvTBq9MUfbbe40CZxqaj5r4hvBG2qjwDMyUpA3uHog7IANMQ2JRRaT2WZLgdfHeTdqd7CujB0H-cgZFyuNzr9jlqKf2BmgkqJTC9fJ65x0gY9f_bP01yjtYSkh7j3z1ZAu2dJWMQE81B60_v1dr8p8GwZCy2TS3IFJ_vYy-3V9ZEDjOBCDRNVoWqR70ZMNQ2NmTASjxBKtqivUV0-__mV6ls2" />
             </div>
