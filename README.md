@@ -26,4 +26,4 @@ DevHive prioritizes **Visual Excellence** and **User Engagement**. The interface
 
 ---
 
-*Built with ❤️ for the Moroccan Developer Community.*
+*Built with ❤️ for the Moroccan Developer Community.*  
