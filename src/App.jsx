@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import './App.css';
 import Navbar from './components/layout/Navbar';
 import Sidebar from './components/layout/Sidebar';
@@ -93,6 +93,17 @@ const MOCK_POSTS = [
 ];
 
 function App() {
+  const [activeTab, setActiveTab] = useState('feed');
+
+  const getFilteredPosts = () => {
+    if (activeTab === 'trending') {
+      return [...MOCK_POSTS].sort((a, b) => b.votes - a.votes);
+    }
+    return MOCK_POSTS; // Default "Home" feed
+  };
+
+  const displayedPosts = getFilteredPosts();
+
   return (
     <div className="relative min-h-screen">
       {/* Background Gradients */}
@@ -105,24 +116,30 @@ function App() {
       <Navbar />
 
       <main className="w-full px-4 md:px-8 py-6 grid grid-cols-1 lg:grid-cols-12 gap-6 md:gap-8">
-        <Sidebar className="lg:col-span-3" />
+        <Sidebar
+          className="lg:col-span-3"
+          activeTab={activeTab}
+          setActiveTab={setActiveTab}
+        />
 
         <section className="col-span-1 lg:col-span-6 space-y-6">
-          {/* Create Post Mock */}
-          <div className="ios-glass ios-glass-border ios-glass-shadow rounded-xl p-4 flex gap-4 items-center">
-            <div className="h-10 w-10 rounded-full bg-primary/20 shrink-0 overflow-hidden">
-              <img alt="Profile" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCR0r7w9UdEpAkpJVKqyQtMpzy8-rUzsSXJxFs1nc27IfrOh1AvZOogvTBq9MUfbbe40CZxqaj5r4hvBG2qjwDMyUpA3uHog7IANMQ2JRRaT2WZLgdfHeTdqd7CujB0H-cgZFyuNzr9jlqKf2BmgkqJTC9fJ65x0gY9f_bP01yjtYSkh7j3z1ZAu2dJWMQE81B60_v1dr8p8GwZCy2TS3IFJ_vYy-3V9ZEDjOBCDRNVoWqR70ZMNQ2NmTASjxBKtqivUV0-__mV6ls2" />
+          {activeTab === 'feed' && (
+            /* Create Post Mock */
+            <div className="ios-glass ios-glass-border ios-glass-shadow rounded-xl p-4 flex gap-4 items-center">
+              <div className="h-10 w-10 rounded-full bg-primary/20 shrink-0 overflow-hidden">
+                <img alt="Profile" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCR0r7w9UdEpAkpJVKqyQtMpzy8-rUzsSXJxFs1nc27IfrOh1AvZOogvTBq9MUfbbe40CZxqaj5r4hvBG2qjwDMyUpA3uHog7IANMQ2JRRaT2WZLgdfHeTdqd7CujB0H-cgZFyuNzr9jlqKf2BmgkqJTC9fJ65x0gY9f_bP01yjtYSkh7j3z1ZAu2dJWMQE81B60_v1dr8p8GwZCy2TS3IFJ_vYy-3V9ZEDjOBCDRNVoWqR70ZMNQ2NmTASjxBKtqivUV0-__mV6ls2" />
+              </div>
+              <input className="flex-1 bg-slate-100 dark:bg-primary/10 border-transparent rounded-lg px-4 py-2 text-sm focus:ring-1 focus:ring-primary outline-none" placeholder="Create a post" type="text" />
+              <button className="p-2 rounded-lg hover:bg-slate-200 dark:hover:bg-primary/10 text-slate-500">
+                <span className="material-symbols-outlined">image</span>
+              </button>
+              <button className="p-2 rounded-lg hover:bg-slate-200 dark:hover:bg-primary/10 text-slate-500">
+                <span className="material-symbols-outlined">link</span>
+              </button>
             </div>
-            <input className="flex-1 bg-slate-100 dark:bg-primary/10 border-transparent rounded-lg px-4 py-2 text-sm focus:ring-1 focus:ring-primary outline-none" placeholder="Create a post" type="text" />
-            <button className="p-2 rounded-lg hover:bg-slate-200 dark:hover:bg-primary/10 text-slate-500">
-              <span className="material-symbols-outlined">image</span>
-            </button>
-            <button className="p-2 rounded-lg hover:bg-slate-200 dark:hover:bg-primary/10 text-slate-500">
-              <span className="material-symbols-outlined">link</span>
-            </button>
-          </div>
+          )}
 
-          {MOCK_POSTS.map(post => (
+          {displayedPosts.map(post => (
             <PostCard key={post.id} post={post} />
           ))}
         </section>
