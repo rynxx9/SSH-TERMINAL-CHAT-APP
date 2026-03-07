@@ -14,7 +14,7 @@ const CommunitiesView = ({ communities, onCommunityClick }) => {
                     >
                         {/* Top: Icon & Title */}
                         <div className="flex items-center gap-4 mb-5">
-                            <div className={`w-16 h-16 rounded-[1.25rem] ${comm.color} flex items-center justify-center text-3xl font-bold shadow-2xl shrink-0`}>
+                            <div className={`w-16 h-16 rounded-full ${comm.color} flex items-center justify-center text-3xl font-bold shadow-2xl shrink-0 border border-white/20`}>
                                 {comm.id.split('/')[1][0]}
                             </div>
                             <div className="overflow-hidden">
@@ -34,12 +34,12 @@ const CommunitiesView = ({ communities, onCommunityClick }) => {
                         <div className="flex items-center justify-between mt-auto pt-5 border-t border-white/20 dark:border-white/5">
                             <div className="flex items-center gap-5">
                                 <div className="flex flex-col">
-                                    <span className="text-[9px] text-slate-500 font-black uppercase tracking-widest opacity-60">Hivers</span>
-                                    <span className="text-base font-black text-slate-800 dark:text-slate-100">{comm.members}</span>
+                                    <span className="text-[8px] text-slate-500 font-black uppercase tracking-widest opacity-60">Hivers</span>
+                                    <span className="text-base font-black text-slate-800 dark:text-slate-100 tracking-tighter">{comm.members}</span>
                                 </div>
                                 <div className="flex flex-col">
-                                    <span className="text-[9px] text-primary font-black uppercase tracking-widest">Hives</span>
-                                    <span className="text-base font-black text-slate-800 dark:text-slate-100">{comm.posts}</span>
+                                    <span className="text-[8px] text-primary font-black uppercase tracking-widest">Hives</span>
+                                    <span className="text-base font-black text-slate-800 dark:text-slate-100 tracking-tighter">{comm.posts}</span>
                                 </div>
                             </div>
 
