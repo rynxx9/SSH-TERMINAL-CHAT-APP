@@ -18,7 +18,7 @@ The goal is to build a **central place where the Moroccan dev community can lear
 
 ---
 
-## ✨ Core Features
+## ✨ Core Features 
 
 * **Community Posts** – Create posts to ask questions or share knowledge
 * **Voting System** – Upvote or downvote useful content
