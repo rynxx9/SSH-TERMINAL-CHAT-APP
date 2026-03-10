@@ -30,7 +30,7 @@ The goal is to build a **central place where the Moroccan dev community can lear
 
 ## 🚀 Tech Stack
 
-* **Frontend:** React + Vite
+* **Frontend:** React + Vite 
 * **Styling:** Modern CSS
 * **Icons:** SVG / Emoji
 
