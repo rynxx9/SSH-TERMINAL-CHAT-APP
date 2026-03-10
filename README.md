@@ -9,7 +9,7 @@ Inspired by discussion platforms like Reddit and developer forums, DevHive focus
 
 DevHive aims to make it easier for developers and students in Morocco to:
 
-* Ask technical questions
+* Ask technical questions 
 * Share solutions and resources
 * Discuss programming, cybersecurity, and tech careers
 * Connect with other developers in the Moroccan ecosystem
