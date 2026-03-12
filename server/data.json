@@ -1,0 +1,384 @@
+{
+  "posts": [
+    {
+      "id": 1,
+      "title": "How to master React in 2026 for the Moroccan market?",
+      "excerpt": "Salam developers! I've been seeing a lot of questions about which stack to choose for local startups. React remains dominant because of the large pool of talent and mature ecosystem...",
+      "image": "https://images.unsplash.com/photo-1633356122544-f134324a6cee?q=80&w=1000&auto=format&fit=crop",
+      "author": "yassine_dev",
+      "tag": "ma/react_js",
+      "time": "2h ago",
+      "votes": 342,
+      "comments": 42
+    },
+    {
+      "id": 2,
+      "title": "Best resources to learn Flutter in Darija?",
+      "excerpt": "I'm looking for YouTube channels or courses that explain mobile development in our local language. Any recommendations?",
+      "author": "noura_codes",
+      "tag": "ma/flutter",
+      "time": "5h ago",
+      "votes": 156,
+      "comments": 28
+    },
+    {
+      "id": 3,
+      "title": "A glimpse into Morocco's growing AI ecosystem",
+      "excerpt": "From UM6P initiatives to private startups in Casablanca, AI is taking off. Here's what you need to know about current opportunities and research centers...",
+      "image": "https://images.unsplash.com/photo-1620712943543-bcc4688e7485?q=80&w=1000&auto=format&fit=crop",
+      "author": "omar_tech",
+      "tag": "ma/ai_morocco",
+      "time": "10h ago",
+      "votes": 890,
+      "comments": 112
+    },
+    {
+      "id": 4,
+      "title": "Is anyone going to DevFest Casablanca this year?",
+      "excerpt": "Just got my ticket for DevFest! Looking forward to the sessions on Web3 and Cloud Native. Who else is joining? Let's meet up!",
+      "author": "saad_cloud",
+      "tag": "ma/events",
+      "time": "12h ago",
+      "votes": 420,
+      "comments": 65
+    },
+    {
+      "id": 5,
+      "title": "How I landed my first remote job from Morocco paying in USD 🚀",
+      "excerpt": "Story time! It took me 6 months of applying, countless rejections, and refining my portfolio. Here is the exact strategy I used and the platforms that worked for me...",
+      "image": "https://images.unsplash.com/photo-1593642632823-8f785ba67e45?q=80&w=1000&auto=format&fit=crop",
+      "author": "laila_remote",
+      "tag": "ma/career",
+      "time": "1d ago",
+      "votes": 1250,
+      "comments": 310
+    },
+    {
+      "id": 6,
+      "title": "Next.js vs Remix - What's the best choice for e-commerce?",
+      "excerpt": "I'm building a new online store for a local client. I've used Next.js extensively but I keep hearing good things about Remix's data loading. Thoughts?",
+      "author": "ilyas_frontend",
+      "tag": "ma/webdev",
+      "time": "1d ago",
+      "votes": 215,
+      "comments": 54
+    },
+    {
+      "id": 7,
+      "title": "Starting a new OSS project: Darija NLP toolkit",
+      "excerpt": "Salam everyone! I'm starting an open-source project to build NLP tools specifically tailored for Moroccan Darija. Looking for contributors who are passionate about Python and Machine Learning.",
+      "image": "https://images.unsplash.com/photo-1555949963-ff9fe0c870eb?q=80&w=1000&auto=format&fit=crop",
+      "author": "asmaa_data",
+      "tag": "ma/opensource",
+      "time": "2d ago",
+      "votes": 680,
+      "comments": 89
+    },
+    {
+      "id": 8,
+      "title": "Best co-working spaces in Rabat for software engineers?",
+      "excerpt": "Working from home is getting a bit lonely. Can anyone recommend some good co-working spaces in Rabat with reliable fiber optics and good coffee?",
+      "author": "mehdi_backend",
+      "tag": "ma/networking",
+      "time": "3d ago",
+      "votes": 95,
+      "comments": 21
+    },
+    {
+      "id": 9,
+      "title": "How to use Tailwind with Next.js 15?",
+      "excerpt": "I am trying to setup a new project and I am a bit confused about the new directory structure. Any tips?",
+      "author": "yassine_dev",
+      "tag": "ma/WebDev_MA",
+      "time": "1h ago",
+      "votes": 120,
+      "comments": 15
+    },
+    {
+      "id": 10,
+      "title": "Best LLMs for Arabic Dialects (Darija)?",
+      "excerpt": "Has anyone tried fine-tuning Llama-3 for Moroccan Darija? Looking for datasets or experiences.",
+      "author": "omar_ai",
+      "tag": "ma/AI_Morocco",
+      "time": "4h ago",
+      "votes": 240,
+      "comments": 32
+    },
+    {
+      "id": 11,
+      "title": "Junior Frontend Developer opening in Casablanca",
+      "excerpt": "Innovative startup looking for a React enthusiast. Remote friendly. DM for details!",
+      "author": "fatima_hr",
+      "tag": "ma/JobHunting",
+      "time": "6h ago",
+      "votes": 85,
+      "comments": 12
+    }
+  ],
+  "communities": [
+    {
+      "id": "ma/WebDev_MA",
+      "members": "12.4k",
+      "posts": "1.2k",
+      "color": "bg-emerald-500/20 text-emerald-500",
+      "banner": "linear-gradient(135deg, #10b981 0%, #059669 100%)",
+      "tags": [
+        "React",
+        "JavaScript",
+        "NodeJS",
+        "Fullstack"
+      ],
+      "description": "The official home for web developers in Morocco. React, Vue, Node, and more!",
+      "beekeepers": [
+        {
+          "name": "Amine_JS",
+          "stats": "940 Honey",
+          "role": "Hive Architect",
+          "activity": "Building cells"
+        },
+        {
+          "name": "Sara_Dev",
+          "stats": "820 Honey",
+          "role": "Elite Guard",
+          "activity": "Securing nectar"
+        },
+        {
+          "name": "Karim_BK",
+          "stats": "500 Honey",
+          "role": "Royal Scout",
+          "activity": "Scouting pollen"
+        }
+      ],
+      "topHivers": [
+        {
+          "name": "Yassine_Dev",
+          "stats": "2.4k Nectar",
+          "role": "Master Gatherer",
+          "activity": "Collecting fast"
+        },
+        {
+          "name": "Meryem_Code",
+          "stats": "1.8k Nectar",
+          "role": "Busy Worker",
+          "activity": "Storing honey"
+        },
+        {
+          "name": "Anas_Web",
+          "stats": "1.2k Nectar",
+          "role": "Pollen Seeker",
+          "activity": "Scanning fields"
+        }
+      ]
+    },
+    {
+      "id": "ma/AI_Morocco",
+      "members": "8.2k",
+      "posts": "850",
+      "color": "bg-orange-500/20 text-orange-500",
+      "banner": "linear-gradient(135deg, #f59e0b 0%, #d97706 100%)",
+      "tags": [
+        "AI",
+        "ML",
+        "Python",
+        "Intelligence"
+      ],
+      "description": "Exploring the future of Artificial Intelligence in the Kingdom. LLMs, Data Science, and ML.",
+      "beekeepers": [
+        {
+          "name": "Omar_AI",
+          "stats": "1.2k Honey",
+          "role": "Neural Beekeeper",
+          "activity": "Training drones"
+        },
+        {
+          "name": "Laila_Data",
+          "stats": "980 Honey",
+          "role": "Data Guardian",
+          "activity": "Sorting pollen"
+        }
+      ],
+      "topHivers": [
+        {
+          "name": "Tariq_ML",
+          "stats": "3.1k Nectar",
+          "role": "Model Collector",
+          "activity": "Optimizing flow"
+        },
+        {
+          "name": "Driss_Bot",
+          "stats": "2.2k Nectar",
+          "role": "Logic Scout",
+          "activity": "Mapping fields"
+        }
+      ]
+    },
+    {
+      "id": "ma/JobHunting",
+      "members": "15.1k",
+      "posts": "3.4k",
+      "color": "bg-blue-500/20 text-blue-500",
+      "banner": "linear-gradient(135deg, #3b82f6 0%, #2563eb 100%)",
+      "tags": [
+        "Jobs",
+        "Careers",
+        "Startups",
+        "Recruitment"
+      ],
+      "description": "Find your next career move. Remote jobs, local startups, and interview tips.",
+      "beekeepers": [
+        {
+          "name": "Fatima_HR",
+          "stats": "2.1k Honey",
+          "role": "Talent Queen",
+          "activity": "Hiring scouts"
+        },
+        {
+          "name": "Youssef_J",
+          "stats": "1.4k Honey",
+          "role": "Career Guard",
+          "activity": "Opening cells"
+        }
+      ],
+      "topHivers": [
+        {
+          "name": "Amal_Career",
+          "stats": "5.2k Nectar",
+          "role": "Lead Seeker",
+          "activity": "Finding nectar"
+        },
+        {
+          "name": "Saad_Remote",
+          "stats": "4.1k Nectar",
+          "role": "Digital Nomad",
+          "activity": "Scouting out"
+        }
+      ]
+    },
+    {
+      "id": "ma/Frontend",
+      "members": "5.6k",
+      "posts": "420",
+      "color": "bg-indigo-500/20 text-indigo-500",
+      "banner": "linear-gradient(135deg, #6366f1 0%, #4f46e5 100%)",
+      "tags": [
+        "UI",
+        "UX",
+        "CSS",
+        "Design"
+      ],
+      "description": "Focusing on the beauty of the web. UI/UX, CSS, and modern framework discussions.",
+      "beekeepers": [
+        {
+          "name": "Reda_UI",
+          "stats": "880 Honey",
+          "role": "Visual Architect",
+          "activity": "Styling cells"
+        },
+        {
+          "name": "Zineb_G",
+          "stats": "750 Honey",
+          "role": "Design Queen",
+          "activity": "Polishing wax"
+        }
+      ],
+      "topHivers": [
+        {
+          "name": "Mehdi_CSS",
+          "stats": "1.9k Nectar",
+          "role": "Style Master",
+          "activity": "Painting wings"
+        },
+        {
+          "name": "Ines_Pixel",
+          "stats": "1.4k Nectar",
+          "role": "Pixel Collector",
+          "activity": "Filtering nectar"
+        }
+      ]
+    },
+    {
+      "id": "ma/Python_MA",
+      "members": "4.3k",
+      "posts": "310",
+      "color": "bg-amber-500/20 text-amber-500",
+      "banner": "linear-gradient(135deg, #f59e0b 0%, #b45309 100%)",
+      "tags": [
+        "Python",
+        "Backend",
+        "Scripting",
+        "Automation"
+      ],
+      "description": "The Pythonista community of Morocco. Backend, Automation, and Scripting.",
+      "beekeepers": [
+        {
+          "name": "Hassan_Py",
+          "stats": "1.1k Honey",
+          "role": "Snake Charmer",
+          "activity": "Scripting flow"
+        },
+        {
+          "name": "Nora_Snake",
+          "stats": "920 Honey",
+          "role": "Script Guardian",
+          "activity": "Checking cells"
+        }
+      ],
+      "topHivers": [
+        {
+          "name": "Adil_Algo",
+          "stats": "2.8k Nectar",
+          "role": "Logic Keeper",
+          "activity": "Solving paths"
+        },
+        {
+          "name": "Siham_Flask",
+          "stats": "2.1k Nectar",
+          "role": "API Scout",
+          "activity": "Routing pollen"
+        }
+      ]
+    },
+    {
+      "id": "ma/OpenSource",
+      "members": "2.9k",
+      "posts": "150",
+      "color": "bg-emerald-600/20 text-emerald-600",
+      "banner": "linear-gradient(135deg, #059669 0%, #064e3b 100%)",
+      "tags": [
+        "OpenSource",
+        "Github",
+        "FOSS",
+        "Community"
+      ],
+      "description": "Building together. Contribute to Moroccan projects and share your own.",
+      "beekeepers": [
+        {
+          "name": "Smail_OSS",
+          "stats": "3.4k Honey",
+          "role": "Kernel Guard",
+          "activity": "Merging wax"
+        },
+        {
+          "name": "Idriss_G",
+          "stats": "2.1k Honey",
+          "role": "Repo Master",
+          "activity": "Forking fields"
+        }
+      ],
+      "topHivers": [
+        {
+          "name": "Brahim_K",
+          "stats": "8.4k Nectar",
+          "role": "Main Collector",
+          "activity": "Pushing pollen"
+        },
+        {
+          "name": "Salma_Commit",
+          "stats": "6.2k Nectar",
+          "role": "Code Scout",
+          "activity": "Commiting honey"
+        }
+      ]
+    }
+  ]
+}
