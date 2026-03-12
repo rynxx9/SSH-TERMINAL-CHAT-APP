@@ -9,7 +9,14 @@
       "tag": "ma/react_js",
       "time": "2h ago",
       "votes": 342,
-      "comments": 42
+      "comments": 42,
+      "comments_list": [
+        { "id": 1, "author": "amine_codes", "text": "Salam! This is exactly what I was looking for. Great share!", "time": "1h ago" },
+        { "id": 2, "author": "sarah_ma", "text": "I tried this last week and it works like a charm. 🇲🇦", "time": "45m ago" },
+        { "id": 3, "author": "hassan_tech", "text": "Can you provide more details about the implementation? Shokran!", "time": "30m ago" },
+        { "id": 4, "author": "laila_dev", "text": "The glass UI is looking amazing btw, is this DevHive standard?", "time": "10m ago" },
+        { "id": 5, "author": "omar_casablanca", "text": "Let's meet up at the next DevFest to discuss this further!", "time": "5m ago" }
+      ]
     },
     {
       "id": 2,
@@ -19,7 +26,11 @@
       "tag": "ma/flutter",
       "time": "5h ago",
       "votes": 156,
-      "comments": 28
+      "comments": 28,
+      "comments_list": [
+        { "id": 1, "author": "amine_codes", "text": "Salam! This is exactly what I was looking for. Great share!", "time": "1h ago" },
+        { "id": 2, "author": "sarah_ma", "text": "I tried this last week and it works like a charm. 🇲🇦", "time": "45m ago" }
+      ]
     },
     {
       "id": 3,
@@ -30,7 +41,10 @@
       "tag": "ma/ai_morocco",
       "time": "10h ago",
       "votes": 890,
-      "comments": 112
+      "comments": 112,
+      "comments_list": [
+        { "id": 1, "author": "amine_codes", "text": "Salam! This is exactly what I was looking for. Great share!", "time": "1h ago" }
+      ]
     },
     {
       "id": 4,

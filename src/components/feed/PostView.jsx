@@ -1,13 +1,5 @@
 import React from 'react';
 
-const MOCK_COMMENTS = [
-    { id: 1, author: "amine_codes", text: "Salam! This is exactly what I was looking for. Great share!", time: "1h ago" },
-    { id: 2, author: "sarah_ma", text: "I tried this last week and it works like a charm. 🇲🇦", time: "45m ago" },
-    { id: 3, author: "hassan_tech", text: "Can you provide more details about the implementation? Shokran!", time: "30m ago" },
-    { id: 4, author: "laila_dev", text: "The glass UI is looking amazing btw, is this DevHive standard?", time: "10m ago" },
-    { id: 5, author: "omar_casablanca", text: "Let's meet up at the next DevFest to discuss this further!", time: "5m ago" }
-];
-
 const PostView = ({ post, onBack }) => {
     return (
         <div className="space-y-6 animate-in fade-in slide-in-from-right-8 duration-500">
@@ -57,7 +49,7 @@ const PostView = ({ post, onBack }) => {
                 </h3>
 
                 <div className="space-y-6">
-                    {MOCK_COMMENTS.map(comment => (
+                    {(post.comments_list || []).map(comment => (
                         <div key={comment.id} className="flex gap-4">
                             <div className="w-8 h-8 rounded-full bg-slate-200 dark:bg-primary/20 shrink-0"></div>
                             <div className="flex-1">
@@ -71,6 +63,9 @@ const PostView = ({ post, onBack }) => {
                             </div>
                         </div>
                     ))}
+                    {(!post.comments_list || post.comments_list.length === 0) && (
+                        <p className="text-sm text-slate-500 italic">No nectar here yet... be the first to comment!</p>
+                    )}
                 </div>
 
                 {/* Comment Input Mock */}
