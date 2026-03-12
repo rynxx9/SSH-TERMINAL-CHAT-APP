@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import Antigravity from '../effects/Antigravity';
 
 const LandingPage = ({ onLogin }) => {
     const [isSignUp, setIsSignUp] = useState(false);
@@ -6,6 +7,28 @@ const LandingPage = ({ onLogin }) => {
     return (
         <div className="min-h-screen relative flex flex-col items-center justify-center p-4 overflow-hidden">
             {/* Background Elements */}
+            <div className="fixed inset-0 overflow-hidden pointer-events-none -z-20 flex items-center justify-center opacity-40">
+                <div style={{ width: '1080px', height: '1080px', position: 'relative' }}>
+                    <Antigravity
+                        count={300}
+                        magnetRadius={10}
+                        ringRadius={10}
+                        waveSpeed={0.4}
+                        waveAmplitude={1}
+                        particleSize={2}
+                        lerpSpeed={0.1}
+                        color="#5a0fe6"
+                        autoAnimate={false}
+                        particleVariance={1}
+                        rotationSpeed={0}
+                        depthFactor={1}
+                        pulseSpeed={3}
+                        particleShape="capsule"
+                        fieldStrength={10}
+                    />
+                </div>
+            </div>
+
             <div className="fixed inset-0 overflow-hidden pointer-events-none -z-10">
                 <div className="absolute top-[-20%] left-[-10%] w-[70%] h-[70%] rounded-full bg-primary/40 blur-[150px] animate-pulse"></div>
                 <div className="absolute bottom-[-20%] right-[-10%] w-[80%] h-[80%] rounded-full bg-blue-500/30 blur-[150px]"></div>
